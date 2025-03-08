@@ -102,12 +102,14 @@
 
       <!-- Navigation arrows -->
       <button
+        @click="slidePrev"
         class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-5 z-10 bg-white rounded-full p-2 shadow-md hidden md:block">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
         </svg>
       </button>
       <button
+        @click="slideNext"
         class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-5 z-10 bg-white rounded-full p-2 shadow-md hidden md:block">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -152,6 +154,19 @@ const goToSlide = (index) => {
     swiperInstance.slideToLoop(index)
   }
 }
+
+const slideNext = () => {
+  if (swiperInstance) {
+    swiperInstance.slideNext()
+  }
+}
+
+const slidePrev = () => {
+  if (swiperInstance) {
+    swiperInstance.slidePrev()
+  }
+}
+
 </script>
 
 <style scoped>

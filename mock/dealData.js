@@ -149,5 +149,12 @@ export const topDealsSlider = [
     discount: "32% OFF",
     originalPrice: "$249",
     currentPrice: "$169.32"
+  },
+  {
+    name: "Apple AirPods Pro (2nd Gen) with MagSafe Charging Case",
+    image: "https://picsum.photos/id/4/400/400",
+    discount: "32% OFF",
+    originalPrice: "$249",
+    currentPrice: "$169.32"
   }
 ] 
