@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Cash Back Section -->
-    <div class="max-w-[1280px] mx-auto px-4 py-8">
+    <div class="max-w-[1280px] mx-auto px-4 py-8"> 
       <div class="max-w-7xl mx-auto">
         <!-- Header Section -->
         <div class="mb-8">

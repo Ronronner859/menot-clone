@@ -2,8 +2,8 @@
   <div class="min-h-screen flex flex-col bg-[#F4F4F4]">
     <!-- 导航栏 -->
     <!--导航栏背景色 rgb(116 31 162 / var(--tw-bg-opacity, 1)) -->
-    <nav class="bg-[#741FA2]">
-      <div class="max-w-[1280px] mx-auto px-4">
+    <nav class="bg-[#741FA2] w-full">
+      <div class="max-w-[1280px] mx-auto px-4 w-full">
         <!-- Desktop Navigation -->
         <div class="hidden md:flex justify-between items-center h-16">
           <!-- Logo and Nav Items -->
@@ -23,41 +23,41 @@
           <!-- Search Bar -->
           <div class="flex-1 max-w-2xl mx-8">
             <!-- 点击的时候，整体变亮 -->
-              <div class="relative bg-white transition-all duration-200" :class="[
-                showSearchDropdown
-                  ? 'rounded-[28px] shadow-[0_2px_8px_rgba(0,0,0,0.15)]'
-                  : 'rounded-full'
-              ]">
-                <div class="absolute inset-y-0 left-3 flex items-center">
-                  <svg class="w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                  </svg>
-                </div>
-                <input v-model="searchQuery" type="text" placeholder="Search"
-                  class="w-full bg-[#8B2CBF] text-white pl-10 pr-4 py-2 rounded-full border-transparent focus:outline-none focus:ring-2 focus:ring-purple-400 placeholder-gray-300 text-sm"
-                  @focus="showSearchDropdown = true" @blur="handleBlur" />
+            <div class="relative bg-white transition-all duration-200" :class="[
+              showSearchDropdown
+                ? 'rounded-[28px] shadow-[0_2px_8px_rgba(0,0,0,0.15)]'
+                : 'rounded-full'
+            ]">
+              <div class="absolute inset-y-0 left-3 flex items-center">
+                <svg class="w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </div>
+              <input v-model="searchQuery" type="text" placeholder="Search"
+                class="w-full bg-[#8B2CBF] text-white pl-10 pr-4 py-2 rounded-full border-transparent focus:outline-none focus:ring-2 focus:ring-purple-400 placeholder-gray-300 text-sm"
+                @focus="showSearchDropdown = true" @blur="handleBlur" />
 
-                <!-- Search Dropdown -->
-                <div v-if="showSearchDropdown"
-                  class="absolute w-full mt-1 bg-white rounded-2xl shadow-[0_2px_8px_rgba(0,0,0,0.15)] py-3 z-50">
-                  <div class="px-5">
-                    <h3 class="text-[#666666] text-sm mb-2">Recent</h3>
-                    <div class="space-y-1">
-                      <div v-for="(item, index) in recentSearches" :key="index"
-                        class="flex items-center py-2 px-3 hover:bg-gray-50 rounded-lg cursor-pointer">
-                        <svg class="w-4 h-4 mr-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                        <span class="text-[#333333] text-sm">{{ item }}</span>
-                      </div>
+              <!-- Search Dropdown -->
+              <div v-if="showSearchDropdown"
+                class="absolute w-full mt-1 bg-white rounded-2xl shadow-[0_2px_8px_rgba(0,0,0,0.15)] py-3 z-50">
+                <div class="px-5">
+                  <h3 class="text-[#666666] text-sm mb-2">Recent</h3>
+                  <div class="space-y-1">
+                    <div v-for="(item, index) in recentSearches" :key="index"
+                      class="flex items-center py-2 px-3 hover:bg-gray-50 rounded-lg cursor-pointer">
+                      <svg class="w-4 h-4 mr-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      <span class="text-[#333333] text-sm">{{ item }}</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
         <!-- Mobile Navigation -->
         <div class="md:hidden flex justify-between items-center h-16">
@@ -119,17 +119,17 @@
     <!-- Personalized Offers Banner -->
     <!-- <PersonalizedOffers /> -->
     <!-- Main Content -->
-    <main class="flex-1 bg-white">
+    <main class="flex-1 bg-white w-full">
       <div class="w-full">
         <NuxtPage />
       </div>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-[#741FA2] text-white py-8">
-      <div class="max-w-[1280px] mx-auto px-4">
+    <footer class="bg-[#741FA2] text-white py-8 w-full">
+      <div class="max-w-[1280px] mx-auto px-4 w-full">
         <!-- Top Section -->
-        <div class="flex flex-wrap justify-between items-center mb-8">
+        <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-8 space-y-6 md:space-y-0">
           <!-- Social Media Links -->
           <div class="flex items-center space-x-6">
             <a href="#" class="hover:opacity-80">
@@ -159,25 +159,28 @@
           </div>
 
           <!-- Right Side Links -->
-          <div class="flex items-center space-x-6 text-sm">
-            <a href="#" class="hover:underline">RetailMeNot Canada</a>
-            <a href="#" class="flex items-center hover:underline">
-              <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-              </svg>
-              AdChoices
-            </a>
-            <a href="#" class="hover:underline">Terms of Service</a>
-            <a href="#" class="hover:underline">Privacy Policy</a>
-            <a href="#" class="hover:underline">Do Not Sell My Personal Information</a>
-            <a href="#" class="hover:underline">Accessibility</a>
-            <a href="#" class="hover:underline">Sitemap</a>
+          <div class="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-6 text-sm">
+            <div class="grid grid-cols-2 md:flex gap-4 md:gap-6">
+              <a href="#" class="hover:underline">RetailMeNot Canada</a>
+              <a href="#" class="flex items-center hover:underline">
+                <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                </svg>
+                AdChoices
+              </a>
+              <a href="#" class="hover:underline">Terms of Service</a>
+              <a href="#" class="hover:underline">Privacy Policy</a>
+              <a href="#" class="hover:underline">Do Not Sell My Info</a>
+              <a href="#" class="hover:underline">Accessibility</a>
+              <a href="#" class="hover:underline">Sitemap</a>
+            </div>
           </div>
         </div>
 
         <!-- Copyright Section -->
         <div class="text-sm opacity-90">
-          <p class="mb-4">©2006-2025 RetailMeNot, Inc., a Ziff Davis company. All rights reserved. RetailMeNot and RMN
+          <p class="mb-4 text-xs md:text-sm">©2006-2025 RetailMeNot, Inc., a Ziff Davis company. All rights reserved.
+            RetailMeNot and RMN
             are registered trademarks of RetailMeNot, Inc. Third-party trademarks are the property of their respective
             third-party owners. Presence of a third-party trademark does not mean that RetailMeNot has any relationship
             with that third-party or that the third-party endorses RetailMeNot or its services.</p>
