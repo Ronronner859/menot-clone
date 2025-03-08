@@ -12,17 +12,17 @@
               <span class="font-script">RetailMeNot</span>
             </NuxtLink>
             <div class="flex items-center space-x-6">
-              <NuxtLink to="/spring-savecation" class="text-white hover:text-gray-200 text-sm font-medium">
+              <!-- <NuxtLink to="/spring-savecation" class="text-white hover:text-gray-200 text-sm font-medium">
                 Spring Savecation
-              </NuxtLink>
-              <div class="relative group">
+              </NuxtLink> -->
+              <!-- <div class="relative group">
                 <NuxtLink to="/stores" class="text-white hover:text-gray-200 text-sm font-medium flex items-center">
                   Stores
                   <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                   </svg>
                 </NuxtLink>
-              </div>
+              </div> -->
               <NuxtLink to="/cash-back" class="text-white hover:text-gray-200 text-sm font-medium">
                 Cash Back
               </NuxtLink>
@@ -125,7 +125,7 @@
       </div>
     </nav>
     <!-- Personalized Offers Banner -->
-    <PersonalizedOffers />
+    <!-- <PersonalizedOffers /> -->
     <!-- Main Content -->
     <main class="flex-1 bg-white">
       <div class="max-w-[1280px] mx-auto">

@@ -33,6 +33,31 @@
       </div>
       <p class="text-sm text-gray-600">{{ editor.bio }}</p>
     </div>
+
+    <div class="mt-8">
+      <!-- Amazon Featured Articles -->
+      <p class="text-sm mb-4 text-black">AMAZON FEATURED ARTICLES</p>
+      <img src="https://picsum.photos/id/20/100/100" alt="Amazon Featured Article"
+        class="w-full h-48 object-cover rounded-lg mb-4">
+      <div class="border-b border-gray-200 pb-4">
+        <p class="text-sm mb-4 text-black">20 Ways to Save at Amazon Every Time You Shop</p>
+        <p class="text-sm mb-4 text-black">Why settle for paying Amazon prices, as low as they may be? You can bring
+          down your order total even further.</p>
+        <p class="text-sm mb-4 text-black">By Maria Lalonde</p>
+      </div>
+      <div class="border-b border-gray-200 pb-4">
+        <p class="text-sm mb-4 text-black">20 Ways to Save at Amazon Every Time You Shop</p>
+        <p class="text-sm mb-4 text-black">Why settle for paying Amazon prices, as low as they may be? You can bring
+          down your order total even further.</p>
+        <p class="text-sm mb-4 text-black">By Maria Lalonde</p>
+      </div>
+      <div class="border-b border-gray-200 pb-4">
+        <p class="text-sm mb-4 text-black">20 Ways to Save at Amazon Every Time You Shop</p>
+        <p class="text-sm mb-4 text-black">Why settle for paying Amazon prices, as low as they may be? You can bring
+          down your order total even further.</p>
+        <p class="text-sm mb-4 text-black">By Maria Lalonde</p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -51,4 +76,4 @@ defineProps({
     required: true
   }
 })
-</script> 
+</script>
