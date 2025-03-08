@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 自定义样式 */
+@layer base {
+  html {
+    @apply text-gray-900;
+  }
+  body {
+    @apply min-h-screen bg-gray-50;
+  }
+}
