@@ -279,7 +279,6 @@
           <!-- Offers -->
           <div class="space-y-4">
             <!-- Cash Back Offer -->
-            <!-- Cash Back Offer -->
             <div class="border border-[#E5F7F9] bg-[#FAFEFE] rounded-lg p-4 md:p-6">
               <div class="flex flex-col md:flex-row items-start gap-6">
                 <!-- Discount Section -->
@@ -326,6 +325,7 @@
                 <!-- Action Button -->
                 <div class="w-full md:w-auto mt-4 md:mt-0">
                   <button
+                    @click="openModal"
                     class="w-full md:w-auto bg-[#5C2D91] text-white px-8 py-3 rounded-full hover:bg-[#4A2475] transition-colors text-base font-semibold">
                     Get Reward
                   </button>
@@ -351,7 +351,9 @@
                     <div class="text-sm text-gray-600">
                       2.3K uses today
                     </div>
-                    <button class="text-sm text-gray-600 hover:text-gray-900 flex items-center gap-1">
+                    <button
+                      @click="openModal"
+                      class="text-sm text-gray-600 hover:text-gray-900 flex items-center gap-1">
                       See Details
                       <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 6v6m0 0v6m0-6h6m-6 0H6" stroke="currentColor" stroke-width="2"
@@ -363,170 +365,7 @@
 
                 <div class="w-full md:w-auto mt-4 md:mt-0">
                   <button
-                    class="relative w-full md:w-auto bg-[#5C2D91] text-white px-8 py-3 rounded-full hover:bg-[#4A2475] transition-colors text-base font-semibold group">
-                    <span class="relative z-10">Show Code</span>
-                    <div class="absolute right-0 top-0 h-full w-6 overflow-hidden rounded-r-full">
-                      <div
-                        class="absolute right-0 h-full w-8 translate-x-2 bg-white/20 transform skew-x-[20deg] group-hover:bg-white/30 transition-colors">
-                      </div>
-                    </div>
-                  </button>
-                </div>
-              </div>
-            </div>
-             <!-- Code Offer -->
-             <div class="border rounded-lg p-4 md:p-6">
-              <div class="flex flex-col md:flex-row items-start gap-6">
-                <div class="w-full md:w-[100px] md:shrink-0">
-                  <div class="text-[#5C2D91] text-center">
-                    <div class="text-[32px] font-bold leading-none">UP TO</div>
-                    <div class="text-[48px] md:text-[42px] font-bold leading-none mt-1">30%</div>
-                    <div class="text-[32px] font-bold leading-none mt-1">OFF</div>
-                  </div>
-                  <div class="text-xs text-center mt-2 text-gray-600">CODE</div>
-                </div>
-
-                <div class="flex-1 min-w-0">
-                  <div class="space-y-3">
-                    <h3 class="text-2xl md:text-xl font-bold">Up To 30% Off With Amazon Coupon</h3>
-                    <div class="text-sm text-gray-600">
-                      2.3K uses today
-                    </div>
-                    <button class="text-sm text-gray-600 hover:text-gray-900 flex items-center gap-1">
-                      See Details
-                      <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 6v6m0 0v6m0-6h6m-6 0H6" stroke="currentColor" stroke-width="2"
-                          stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-
-                <div class="w-full md:w-auto mt-4 md:mt-0">
-                  <button
-                    class="relative w-full md:w-auto bg-[#5C2D91] text-white px-8 py-3 rounded-full hover:bg-[#4A2475] transition-colors text-base font-semibold group">
-                    <span class="relative z-10">Show Code</span>
-                    <div class="absolute right-0 top-0 h-full w-6 overflow-hidden rounded-r-full">
-                      <div
-                        class="absolute right-0 h-full w-8 translate-x-2 bg-white/20 transform skew-x-[20deg] group-hover:bg-white/30 transition-colors">
-                      </div>
-                    </div>
-                  </button>
-                </div>
-              </div>
-            </div>
-             <!-- Code Offer -->
-             <div class="border rounded-lg p-4 md:p-6">
-              <div class="flex flex-col md:flex-row items-start gap-6">
-                <div class="w-full md:w-[100px] md:shrink-0">
-                  <div class="text-[#5C2D91] text-center">
-                    <div class="text-[32px] font-bold leading-none">UP TO</div>
-                    <div class="text-[48px] md:text-[42px] font-bold leading-none mt-1">30%</div>
-                    <div class="text-[32px] font-bold leading-none mt-1">OFF</div>
-                  </div>
-                  <div class="text-xs text-center mt-2 text-gray-600">CODE</div>
-                </div>
-
-                <div class="flex-1 min-w-0">
-                  <div class="space-y-3">
-                    <h3 class="text-2xl md:text-xl font-bold">Up To 30% Off With Amazon Coupon</h3>
-                    <div class="text-sm text-gray-600">
-                      2.3K uses today
-                    </div>
-                    <button class="text-sm text-gray-600 hover:text-gray-900 flex items-center gap-1">
-                      See Details
-                      <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 6v6m0 0v6m0-6h6m-6 0H6" stroke="currentColor" stroke-width="2"
-                          stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-
-                <div class="w-full md:w-auto mt-4 md:mt-0">
-                  <button
-                    class="relative w-full md:w-auto bg-[#5C2D91] text-white px-8 py-3 rounded-full hover:bg-[#4A2475] transition-colors text-base font-semibold group">
-                    <span class="relative z-10">Show Code</span>
-                    <div class="absolute right-0 top-0 h-full w-6 overflow-hidden rounded-r-full">
-                      <div
-                        class="absolute right-0 h-full w-8 translate-x-2 bg-white/20 transform skew-x-[20deg] group-hover:bg-white/30 transition-colors">
-                      </div>
-                    </div>
-                  </button>
-                </div>
-              </div>
-            </div>
-             <!-- Code Offer -->
-             <div class="border rounded-lg p-4 md:p-6">
-              <div class="flex flex-col md:flex-row items-start gap-6">
-                <div class="w-full md:w-[100px] md:shrink-0">
-                  <div class="text-[#5C2D91] text-center">
-                    <div class="text-[32px] font-bold leading-none">UP TO</div>
-                    <div class="text-[48px] md:text-[42px] font-bold leading-none mt-1">30%</div>
-                    <div class="text-[32px] font-bold leading-none mt-1">OFF</div>
-                  </div>
-                  <div class="text-xs text-center mt-2 text-gray-600">CODE</div>
-                </div>
-
-                <div class="flex-1 min-w-0">
-                  <div class="space-y-3">
-                    <h3 class="text-2xl md:text-xl font-bold">Up To 30% Off With Amazon Coupon</h3>
-                    <div class="text-sm text-gray-600">
-                      2.3K uses today
-                    </div>
-                    <button class="text-sm text-gray-600 hover:text-gray-900 flex items-center gap-1">
-                      See Details
-                      <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 6v6m0 0v6m0-6h6m-6 0H6" stroke="currentColor" stroke-width="2"
-                          stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-
-                <div class="w-full md:w-auto mt-4 md:mt-0">
-                  <button
-                    class="relative w-full md:w-auto bg-[#5C2D91] text-white px-8 py-3 rounded-full hover:bg-[#4A2475] transition-colors text-base font-semibold group">
-                    <span class="relative z-10">Show Code</span>
-                    <div class="absolute right-0 top-0 h-full w-6 overflow-hidden rounded-r-full">
-                      <div
-                        class="absolute right-0 h-full w-8 translate-x-2 bg-white/20 transform skew-x-[20deg] group-hover:bg-white/30 transition-colors">
-                      </div>
-                    </div>
-                  </button>
-                </div>
-              </div>
-            </div>
-             <!-- Code Offer -->
-             <div class="border rounded-lg p-4 md:p-6">
-              <div class="flex flex-col md:flex-row items-start gap-6">
-                <div class="w-full md:w-[100px] md:shrink-0">
-                  <div class="text-[#5C2D91] text-center">
-                    <div class="text-[32px] font-bold leading-none">UP TO</div>
-                    <div class="text-[48px] md:text-[42px] font-bold leading-none mt-1">30%</div>
-                    <div class="text-[32px] font-bold leading-none mt-1">OFF</div>
-                  </div>
-                  <div class="text-xs text-center mt-2 text-gray-600">CODE</div>
-                </div>
-
-                <div class="flex-1 min-w-0">
-                  <div class="space-y-3">
-                    <h3 class="text-2xl md:text-xl font-bold">Up To 30% Off With Amazon Coupon</h3>
-                    <div class="text-sm text-gray-600">
-                      2.3K uses today
-                    </div>
-                    <button class="text-sm text-gray-600 hover:text-gray-900 flex items-center gap-1">
-                      See Details
-                      <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 6v6m0 0v6m0-6h6m-6 0H6" stroke="currentColor" stroke-width="2"
-                          stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-
-                <div class="w-full md:w-auto mt-4 md:mt-0">
-                  <button
+                    @click="openModal"
                     class="relative w-full md:w-auto bg-[#5C2D91] text-white px-8 py-3 rounded-full hover:bg-[#4A2475] transition-colors text-base font-semibold group">
                     <span class="relative z-10">Show Code</span>
                     <div class="absolute right-0 top-0 h-full w-6 overflow-hidden rounded-r-full">
@@ -542,13 +381,31 @@
         </div>
       </div>
     </div>
+
+    <!-- Add modal component -->
+    <CouponModal 
+      :is-open="isModalOpen" 
+      @close="closeModal"
+    />
   </div>
 </template>
 
 
 <script setup>
+import { ref } from 'vue'
 import { amazonData } from '~/mock/merchantData'
 import MerchantHeader from '~/components/MerchantHeader.vue'
 import MerchantSidebar from '~/components/MerchantSidebar.vue'
 import MerchantOffer from '~/components/MerchantOffer.vue'
+import CouponModal from '~/components/CouponModal.vue'
+
+const isModalOpen = ref(false)
+
+const openModal = () => {
+  isModalOpen.value = true
+}
+
+const closeModal = () => {
+  isModalOpen.value = false
+}
 </script>
