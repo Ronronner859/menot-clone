@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+  <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-200">
     <div class="relative">
       <div class="absolute top-2 left-2 bg-white rounded-full px-2 py-1 flex items-center shadow-sm z-10">
         <img :src="dealIcon" alt="Hot" class="w-4 h-4 mr-1 rounded-full" />

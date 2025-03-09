@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Cash Back Section -->
-    <div class="max-w-[1280px] mx-auto px-4 py-8"> 
+    <div class="max-w-[1280px] mx-auto px-4 py-8 w-full"> 
       <div class="max-w-7xl mx-auto">
         <!-- Header Section -->
         <div class="mb-8">
@@ -49,7 +49,7 @@
       </div>
     </div>
     <!-- Spring Savecation Deals Section -->
-    <div class="max-w-[1280px] mx-auto px-4 py-8">
+    <div class="max-w-[1280px] mx-auto px-4 py-8 w-full">
       <div class="flex justify-between items-center mb-6">
         <h2 class="text-[1.25rem] font-bold">Spring Savecation Deals</h2>
         <a href="#" class="text-[#741FA2] font-semibold underline">
@@ -67,7 +67,7 @@
     <TopDealsSlider />
 
     <!-- Top Deals -->
-    <div class="max-w-[1280px] mx-auto px-4 py-8">
+    <div class="max-w-[1280px] mx-auto px-4 py-8 w-full">
       <div class="flex justify-between items-center mb-6">
         <h2 class="text-[1.25rem] font-bold">Top Deals</h2>
         <a href="#" class="text-[#741FA2] font-semibold underline">
